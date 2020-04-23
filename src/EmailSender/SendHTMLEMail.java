@@ -23,7 +23,7 @@ public class SendHTMLEMail {
 
 	public void emailSender(String sub, String message, String EMAIL_TO) throws IOException {
 
-		Properties prop = System.getProperties();
+		Properties prop  = System.getProperties();
 		prop.put("mail.smtp.starttls.enable", "true");
 		prop.put("mail.smtp.host", SMTP_SERVER); // optional, defined in SMTPTransport
 		prop.put("mail.smtp.auth", "true");
